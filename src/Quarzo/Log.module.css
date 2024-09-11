@@ -46,15 +46,49 @@ body, .pageContainer
 .containerMain_register
 {
   color:blue;
-  width: 200px;
+  width: 25vw;
   height: 200px;
-  border: 2px solid azure;
+  border-right: 0.1px solid rgba(240, 255, 255, 0.184);
 }
+
 
 .containerMain_logIn
 {
-  color:blue;
-  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color:white;
+  width: 25vw;
   height: 200px;
-  border: 2px solid azure;
+  
+}
+
+.containerMain_EmailLabel, .containerMain_EmailPassowrd, .containerMain_Forgotten
+{
+  margin: 10px;
+}
+
+.containerMain_Email, .containerMain_Password
+{
+  width: 23vw;
+  height: 7vh;
+  background-color: #181818;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.containerMain_ButtonLogIn
+{
+  background-color: rgb(0, 170, 255);
+  height: 5vh;
+  width: 9.5vw;
+  border-radius: 10px;
+  border: none;
+}
+
+.containerMain_ButtonLogIn:hover
+{
+  background-color: rgb(7, 115, 169);
 }

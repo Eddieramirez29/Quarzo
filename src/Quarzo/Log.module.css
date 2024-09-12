@@ -51,6 +51,23 @@ body, .pageContainer
   border-right: 0.1px solid rgba(240, 255, 255, 0.184);
 }
 
+.containerMain_logIn_upperbar
+{
+  border:none;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  border-top: 1px solid rgba(240, 255, 255, 0.184);
+  width: 80%; /* Ajusta el ancho de la línea al 80% del contenedor */
+}
+
+.containerMain_logIn_lowerbar
+{
+  border:none;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  border-top: 1px solid rgba(240, 255, 255, 0.184);
+  width: 100%; /* Ajusta el ancho de la línea al 80% del contenedor */
+}
 
 .containerMain_logIn
 {
@@ -77,6 +94,19 @@ body, .pageContainer
   margin: 10px;
   border: none;
   border-radius: 5px;
+  color: white;
+  outline: none;
+}
+
+.containerMain_Forgotten
+{
+  color: white;
+  text-decoration: none;
+}
+
+.containerMain_Forgotten:hover
+{
+  text-decoration: underline;
 }
 
 .containerMain_Email:hover, .containerMain_Password:hover

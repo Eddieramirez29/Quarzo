@@ -79,6 +79,12 @@ body, .pageContainer
   border-radius: 5px;
 }
 
+.containerMain_Email:hover, .containerMain_Password:hover
+{
+  outline: 2px solid rgb(7, 115, 169);
+}
+
+
 .containerMain_ButtonLogIn
 {
   background-color: rgb(0, 170, 255);

@@ -32,9 +32,13 @@ body, .pageContainer
 .containerMain_title
 {
   color: red;
-  width: 200px;
+  width: 60vw;
   height: 200px;
-  border: 2px solid azure;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10vh;
+  font-weight: bolder;
 }
 
 .containerMain_subContainer
@@ -47,7 +51,7 @@ body, .pageContainer
 {
   color:blue;
   width: 25vw;
-  height: 200px;
+  height: 250px;
   border-right: 0.1px solid rgba(240, 255, 255, 0.184);
 }
 
@@ -127,4 +131,61 @@ body, .pageContainer
 .containerMain_ButtonLogIn:hover
 {
   background-color: rgb(7, 115, 169);
+}
+
+.containerMain_register
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerMain_register_policy
+{
+  color: white;
+}
+
+.containerMain_ButtonGoogle
+{
+  margin: 20px;
+}
+
+.containerMain_ButtonGoogle, .containerMain_ButtonFacebook
+{
+  width: 23vw;
+  height: 7vh;
+  background-color: #181818;
+  color: white;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerMain_ButtonSingUp
+{
+  width: 23vw;
+  height: 5vh;
+  background-color: #262626;
+  color: white;
+  border: none;
+  margin: 20px;
+  border-radius: 2vh;
+
+}
+
+.containerMain_ButtonSingUp:hover
+{
+  background-color: #2f2f2f;
+}
+
+.containerMain_ButtonGoogle:hover, .containerMain_ButtonFacebook:hover
+{
+  background-color: white;
+}
+
+.containerMain_GoogleIcon, .containerMain_FacebookIcon
+{
+  margin-right: 10px;
 }

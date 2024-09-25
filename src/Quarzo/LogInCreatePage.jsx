@@ -19,7 +19,7 @@ function LogInCreatePage()
                   </p>
 
                   <button className = {styles.containerMain_ButtonGoogle} type="submit">
-                   <img src={googleIcon} className = {styles.containerMain_GoogleIcon}  height={20} width={20} alt="" /> Continuar con Google</button>
+                  <img src={googleIcon} className = {styles.containerMain_GoogleIcon}  height={20} width={20} alt="" /> Continuar con Google</button>
                   <button className = {styles.containerMain_ButtonFacebook} type="submit">
                   <img src={facebookIcon} className = {styles.containerMain_FacebookIcon} height={20} width={20} alt="" />Seguir con Facebook</button>
                   <button className = {styles.containerMain_ButtonSingUp} type="submit">

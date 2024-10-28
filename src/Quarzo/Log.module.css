@@ -24,9 +24,16 @@ section {
   width: 50%;
 }
 
+.formContainer > * {
+  display: flex;
+  flex-direction: column;
+}
+
 .containerMain_register > * {
   margin-top: 10px;
   margin-bottom: 10px;
+  margin-left: 3px;
+  margin-right: 3px;
   text-align: center;
 }
 

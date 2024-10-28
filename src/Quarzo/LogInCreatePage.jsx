@@ -29,9 +29,9 @@ function LogInCreatePage()
 
         <div className={styles.containerMain_logIn}>
           <p>Iniciar Sesión</p>
-        <hr className={styles.containerMain_logIn_upperbar} />
+          <hr className={styles.containerMain_logIn_upperbar} />
 
-        <div className="form-container">
+          <div className={styles.formContainer}>
             <form>
               <label htmlFor="email" className = {styles.containerMain_EmailLabel}>Correo Electrónico</label>
                 <input type="email" placeholder="Tu correo electrónico" className = {styles.containerMain_Email} name="email"required/>
@@ -40,7 +40,7 @@ function LogInCreatePage()
                 <a href="" className = {styles.containerMain_Forgotten}>¿Has olvidado la contraseña?</a>
               <button className = {styles.containerMain_ButtonLogIn} type="submit">Iniciar Sesión</button>
             </form>
-        </div>
+          </div>
         </div>
         </section>
             </main>

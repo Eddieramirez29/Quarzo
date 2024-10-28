@@ -1,10 +1,13 @@
-.containerMain {
+.containerMain
+{
   background-color: rgb(38, 36, 36);
   width: 100vw;
   height: 100vh;
 }
 
-header {
+
+header
+{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,33 +15,39 @@ header {
   font-size: 40px;
 }
 
-section {
+section
+{
+  // border: 2px solid greenyellow;
   display: flex;
   flex-direction: row;
 }
 
-.containerMain_register, .containerMain_logIn {
+.containerMain_register, .containerMain_logIn
+{
   border: 2px solid greenyellow;
   display: flex;
   flex-direction: column;
   width: 50%;
 }
 
-.containerMain_register > * {
+.containerMain_register > *
+{
   margin-top: 10px;
   margin-bottom: 10px;
   text-align: center;
 }
 
-.containerMain_register_policy {
+.containerMain_register_policy
+{
   color: antiquewhite;
 }
 
-a {
+a{
   color: blue;
 }
 
-.containerMain_register > button {
+.containerMain_register > button
+{
   background-color: rgb(17, 16, 16);
   color: antiquewhite;
   border: 0.5px solid rgb(77, 78, 76);
@@ -48,8 +57,9 @@ a {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+
 }
 
-.containerMain_register > button:hover {
+.containerMain_register > button:hover{
   background-color: antiquewhite;
-}/*# sourceMappingURL=Log.module.css.map */
+}

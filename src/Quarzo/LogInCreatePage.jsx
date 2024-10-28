@@ -1,21 +1,22 @@
 import styles from "./Log.module.css"
 import googleIcon from "../assets/icons8-logo-de-google-48.png"
 import facebookIcon  from "../assets/icons8-facebook-nuevo-48.png"
-import Quarzo from "../assets/Quarzo.webp"
+
 
 function LogInCreatePage()
 {
     return(
-        <div className={styles.pageContainer}>
-            <img className = {styles.containerBackgroundImage} src = {Quarzo} alt="" />
-            <main className = {styles.containerMain}>
-                <p className = {styles.containerMain_title}>Quarzo</p>
-                <div className = {styles.containerMain_subContainer}>
-                  
+      <main className = {styles.containerMain}> 
+        <header>
+          <p className = {styles.containerMain_title}>Quarzo</p>
+        </header>
+
+                <section>
                 <div className={styles.containerMain_register}>
                   <p className={styles.containerMain_register_policy}>
-                  Al continuar indicas que aceptas las condiciones de
-                  servicio y la política de privacidad de Quarzo.
+                    Al continuar indicas que aceptas las <a href="">condiciones de
+                    servicio</a> 
+                    y las <a href="">políticas de privacidad</a> de Quarzo.
                   </p>
 
                   <button className = {styles.containerMain_ButtonGoogle} type="submit">
@@ -23,9 +24,9 @@ function LogInCreatePage()
                   <button className = {styles.containerMain_ButtonFacebook} type="submit">
                   <img src={facebookIcon} className = {styles.containerMain_FacebookIcon} height={20} width={20} alt="" />Seguir con Facebook</button>
                   <button className = {styles.containerMain_ButtonSingUp} type="submit">
-                  Registrate con el correo electrónico</button>
-
+                    Registrate con el correo electrónico</button>
                 </div>
+
         <div className={styles.containerMain_logIn}>
           <p>Iniciar Sesión</p>
         <hr className={styles.containerMain_logIn_upperbar} />
@@ -41,9 +42,8 @@ function LogInCreatePage()
             </form>
         </div>
         </div>
-        </div>
+        </section>
             </main>
-        </div>
 
         
     );

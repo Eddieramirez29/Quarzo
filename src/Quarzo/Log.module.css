@@ -6,12 +6,34 @@
   background-color: rgb(38, 36, 36);
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+input {
+  border-width: 2px;
+  border-radius: 5px;
+  border-color: transparent;
+}
+
+.containerMain_Email, .containerMain_Password {
+  width: 150px;
+}
+
+input:hover, input:focus {
+  border-color: #A20000;
+  outline: none;
+}
+
 header {
   display: flex;
   justify-content: center;
   align-items: center;
   color: #A20000;
-  font-size: 40px;
 }
 
 section {
@@ -20,7 +42,6 @@ section {
 }
 
 .containerMain_register, .containerMain_logIn {
-  border: 2px solid greenyellow;
   display: flex;
   flex-direction: column;
   width: 50%;
@@ -98,6 +119,13 @@ a {
   .containerMain_title {
     font-size: 50px;
   }
+  input {
+    border-width: 3px;
+    border-radius: 8px;
+  }
+  .containerMain_Email, .containerMain_Password {
+    width: 200px;
+  }
 }
 @media (min-width: 1024px) {
   .containerMain_register > button {
@@ -109,5 +137,12 @@ a {
   }
   .containerMain_title {
     font-size: 70px;
+  }
+  input {
+    border-width: 4px;
+    border-radius: 10px;
+  }
+  .containerMain_Email, .containerMain_Password {
+    width: 300px;
   }
 }/*# sourceMappingURL=Log.module.css.map */

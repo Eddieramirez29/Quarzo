@@ -2,14 +2,20 @@
 $font-size-425:15px;
 $font-size-title-425:40px;
 $button-width-425:150px;
+$button-border-radius-425:5px;
+$border-width-425:2px;
 
 $button-width-768:200px;
 $font-size-768:17px;
 $font-size-title-768:50px;
+$button-border-radius-768:8px;
+$border-width-768:3px;
 
 $button-width-1024:300px;
 $font-size-1024:18px;
 $font-size-title-1024:70px;
+$button-border-radius-1024:10px;
+$border-width-1024:4px;
 
 .containerMain_title
 {
@@ -21,6 +27,33 @@ $font-size-title-1024:70px;
   background-color: rgb(38, 36, 36);
 }
 
+a
+{
+  text-decoration: none;
+}
+
+a:hover
+{
+  text-decoration: underline;
+}
+
+input
+{
+  border-width: $border-width-425;
+  border-radius: $button-border-radius-425;
+  border-color: transparent;
+}
+
+.containerMain_Email, .containerMain_Password
+{
+  width: $button-width-425;
+}
+
+input:hover, input:focus
+{
+  border-color: #A20000;
+  outline: none;
+}
 
 header
 {
@@ -28,22 +61,26 @@ header
   justify-content: center;
   align-items: center;
   color: #A20000;
-  font-size: 40px;
 }
 
 section
 {
-  // border: 2px solid greenyellow;
+  // // border: 2px solid greenyellow;
   display: flex;
   flex-direction: row;
 }
 
 .containerMain_register, .containerMain_logIn
 {
-  border: 2px solid greenyellow;
+  // border: 2px solid greenyellow;
   display: flex;
   flex-direction: column;
   width: 50%;
+}
+
+.formContainer
+{
+  // border: 2px solid greenyellow;
 }
 
 
@@ -132,6 +169,16 @@ a{
   {
     font-size: $font-size-title-768;
   }
+
+  input
+  {
+    border-width: $border-width-768;
+    border-radius: $button-border-radius-768;
+  }
+  .containerMain_Email, .containerMain_Password
+  {
+    width: $button-width-768;
+  }
 }
 
 @media (min-width:1024px)
@@ -147,8 +194,18 @@ a{
     font-size: $font-size-1024;
   }
 
+
   .containerMain_title
   {
     font-size: $font-size-title-1024;
+  }
+  input
+  {
+    border-width: $border-width-1024;
+    border-radius: $button-border-radius-1024;
+  }
+  .containerMain_Email, .containerMain_Password
+  {
+    width: $button-width-1024;
   }
 }

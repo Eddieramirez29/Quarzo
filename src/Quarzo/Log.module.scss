@@ -1,8 +1,24 @@
+
+$font-size-425:15px;
+$font-size-title-425:40px;
+$button-width-425:150px;
+
+$button-width-768:200px;
+$font-size-768:17px;
+$font-size-title-768:50px;
+
+$button-width-1024:300px;
+$font-size-1024:18px;
+$font-size-title-1024:70px;
+
+.containerMain_title
+{
+  font-size: $font-size-title-425;
+}
+
 .containerMain
 {
   background-color: rgb(38, 36, 36);
-  width: 100vw;
-  height: 100vh;
 }
 
 
@@ -30,13 +46,29 @@ section
   width: 50%;
 }
 
-.formContainer > *
+
+
+.containerMain_register, form, .containerMain_logIn p
 {
   display: flex;
+  align-items: center;
   flex-direction: column;
 }
 
-.containerMain_register > *
+form{
+  font-size: $font-size-425;
+  color: whitesmoke;
+}
+
+.containerMain_logIn
+{
+  color: white;
+}
+
+
+
+
+.containerMain_register > *, form > *
 {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -45,9 +77,20 @@ section
   text-align: center;
 }
 
+input::placeholder
+{
+  font-size: $font-size-425;
+}
+
+.containerMain_Email, .containerMain_Password
+{
+  width: 180px;
+}
+
 .containerMain_register_policy
 {
   color: antiquewhite;
+  font-size: $font-size-425;
 }
 
 a{
@@ -61,13 +104,51 @@ a{
   border: 0.5px solid rgb(77, 78, 76);
   border-radius: 10px;
   height: 40px;
-  font-size: 15px;
+  width: 150px;
+  font-size: $font-size-425;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-
 }
 
 .containerMain_register > button:hover{
   background-color: antiquewhite;
+}
+
+@media (min-width:768px)
+{
+  .containerMain_register > button
+  {
+    width: $button-width-768;
+    font-size: $font-size-768;
+  }
+
+  .containerMain_register_policy, form
+  {
+    font-size: $font-size-768;
+  }
+
+  .containerMain_title
+  {
+    font-size: $font-size-title-768;
+  }
+}
+
+@media (min-width:1024px)
+{
+  .containerMain_register > button
+  {
+    width: $button-width-1024;
+    font-size: $font-size-1024;
+  }
+
+  .containerMain_register_policy, form
+  {
+    font-size: $font-size-1024;
+  }
+
+  .containerMain_title
+  {
+    font-size: $font-size-title-1024;
+  }
 }

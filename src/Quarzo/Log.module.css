@@ -2,8 +2,15 @@
   font-size: 40px;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .containerMain {
   background-color: rgb(38, 36, 36);
+  width: 425px;
 }
 
 a {
@@ -33,7 +40,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #A20000;
+  color: #f20606;
+  font-weight: 600;
 }
 
 section {
@@ -48,6 +56,12 @@ section {
 }
 
 .containerMain_register, form, .containerMain_logIn p {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+form {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -91,6 +105,10 @@ a {
   color: blue;
 }
 
+.containerMain_Forgotten {
+  color: antiquewhite;
+}
+
 .containerMain_register > button {
   background-color: rgb(17, 16, 16);
   color: antiquewhite;
@@ -102,6 +120,20 @@ a {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+}
+
+.containerMain_ButtonLogIn {
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(30, 30, 231);
+  color: antiquewhite;
+}
+
+.containerMain_ButtonLogIn:hover {
+  border: none;
+  background-color: rgb(6, 6, 188);
+  color: rgb(252, 252, 252);
 }
 
 .containerMain_register > button:hover {
@@ -126,6 +158,9 @@ a {
   .containerMain_Email, .containerMain_Password {
     width: 200px;
   }
+  .containerMain {
+    width: 768px;
+  }
 }
 @media (min-width: 1024px) {
   .containerMain_register > button {
@@ -144,5 +179,8 @@ a {
   }
   .containerMain_Email, .containerMain_Password {
     width: 300px;
+  }
+  .containerMain {
+    width: 900px;
   }
 }/*# sourceMappingURL=Log.module.css.map */

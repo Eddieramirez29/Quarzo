@@ -27,7 +27,7 @@ input {
   border-color: transparent;
 }
 
-.containerMain_Email, .containerMain_Password, .containerMain_Name {
+.containerMain_Email, .containerMain_Password, .containerMain_Name, .containerMain_PasswordConfirm {
   width: 150px;
 }
 
@@ -42,6 +42,7 @@ header {
   align-items: center;
   color: #f20606;
   font-weight: 600;
+  height: 170px;
 }
 
 section {
@@ -155,7 +156,7 @@ a {
     border-width: 3px;
     border-radius: 8px;
   }
-  .containerMain_Email, .containerMain_Password, .containerMain_Name {
+  .containerMain_Email, .containerMain_Password, .containerMain_Name, .containerMain_PasswordConfirm {
     width: 200px;
   }
   .containerMain {
@@ -177,7 +178,7 @@ a {
     border-width: 4px;
     border-radius: 10px;
   }
-  .containerMain_Email, .containerMain_Password, .containerMain_Name {
+  .containerMain_Email, .containerMain_Password, .containerMain_Name, .containerMain_PasswordConfirm {
     width: 300px;
   }
   .containerMain {

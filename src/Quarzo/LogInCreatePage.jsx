@@ -32,11 +32,12 @@ function LogInCreatePage()
                   <button className = {styles.containerMain_ButtonFacebook} type="submit">
                   <img src={facebookIcon} className = {styles.containerMain_FacebookIcon} height={20} width={20} alt="" />Seguir con Facebook</button>
                   <button onClick = {hideNameInputFunction} className = {styles.containerMain_ButtonSingUp} type="submit">
-                    Registrate con el correo electrónico</button>
+                    {displayNameInput === 0 ? "¿Ya estás registrado?"  : "Registrate con el correo electrónico"}
+                          </button>
                 </div>
 
         <div className={styles.containerMain_logIn}>
-          <p>Iniciar Sesión</p>
+          <p>{displayNameInput === 0 ? "Registrarse" : "Iniciar sesión"}</p>
         
 
           <div className={styles.formContainer}>
@@ -51,9 +52,15 @@ function LogInCreatePage()
                 <input type="email" placeholder="Tu correo electrónico" className = {styles.containerMain_Email} name="email" required/>
               <label htmlFor="password" className = {styles.containerMain_EmailPassowrd}>Contraseña</label>
                 <input type="password" placeholder="Tu contraseña" className = {styles.containerMain_Password} name="password" required />
-                <a href="" className = {styles.containerMain_Forgotten}>¿Has olvidado la contraseña?</a>
+                {displayNameInput === 0 && (<>
+              <label htmlFor="password" className = {styles.containerMain_EmailPassowrdConfirm}>Confirmar contraseña</label>
+                <input type="password" placeholder="Vuelve a escribir tu contraseña" className = {styles.containerMain_PasswordConfirm} name="password" required />
+              </> )}
+                {displayNameInput === 1 && (<>
+                    <a href="" className = {styles.containerMain_Forgotten}>¿Has olvidado la contraseña?</a>
+                </> )}
               <button className = {styles.containerMain_ButtonLogIn} type="submit">
-              {displayNameInput === 0 ? "Registrarse" : "Iniciar sesión"}
+                  {displayNameInput === 0 ? "Registrarse" : "Iniciar sesión"}
               </button>
             </form>
           </div>

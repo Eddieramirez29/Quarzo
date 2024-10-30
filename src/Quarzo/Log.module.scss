@@ -23,6 +23,7 @@ $width-size-1024:900px;
 .containerMain_title
 {
   font-size: $font-size-title-425;
+  // border: 2px solid greenyellow;
 }
 
 body
@@ -55,7 +56,7 @@ input
   border-color: transparent;
 }
 
-.containerMain_Email, .containerMain_Password, .containerMain_Name
+.containerMain_Email, .containerMain_Password, .containerMain_Name, .containerMain_PasswordConfirm
 {
   width: $button-width-425;
 }
@@ -73,6 +74,8 @@ header
   align-items: center;
   color: #f20606;
   font-weight: 600;
+  // border: 2px solid greenyellow;
+  height: 170px;
 }
 
 section
@@ -210,7 +213,7 @@ a{
     border-width: $border-width-768;
     border-radius: $button-border-radius-768;
   }
-  .containerMain_Email, .containerMain_Password, .containerMain_Name
+  .containerMain_Email, .containerMain_Password, .containerMain_Name, .containerMain_PasswordConfirm
   {
     width: $button-width-768;
   }
@@ -243,7 +246,7 @@ a{
     border-width: $border-width-1024;
     border-radius: $button-border-radius-1024;
   }
-  .containerMain_Email, .containerMain_Password, .containerMain_Name
+  .containerMain_Email, .containerMain_Password, .containerMain_Name, .containerMain_PasswordConfirm
   {
     width: $button-width-1024;
   }

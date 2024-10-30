@@ -6,12 +6,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: wheat;
 }
 
 .containerMain {
   background-color: rgb(38, 36, 36);
   width: 425px;
   height: 580px;
+  border-radius: 20px;
 }
 
 a {

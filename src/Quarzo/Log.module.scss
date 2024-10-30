@@ -31,6 +31,7 @@ body
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: wheat;
 }
 
 .containerMain
@@ -38,6 +39,7 @@ body
   background-color: rgb(38, 36, 36);
   width: $width-size-425;
   height: 580px;
+  border-radius:20px;
 }
 
 a

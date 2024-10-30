@@ -55,7 +55,7 @@ input
   border-color: transparent;
 }
 
-.containerMain_Email, .containerMain_Password
+.containerMain_Email, .containerMain_Password, .containerMain_Name
 {
   width: $button-width-425;
 }
@@ -121,8 +121,8 @@ form{
 
 .containerMain_register > *, form > *
 {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   margin-left: 3px;
   margin-right: 3px;
   text-align: center;
@@ -210,7 +210,7 @@ a{
     border-width: $border-width-768;
     border-radius: $button-border-radius-768;
   }
-  .containerMain_Email, .containerMain_Password
+  .containerMain_Email, .containerMain_Password, .containerMain_Name
   {
     width: $button-width-768;
   }
@@ -243,7 +243,7 @@ a{
     border-width: $border-width-1024;
     border-radius: $button-border-radius-1024;
   }
-  .containerMain_Email, .containerMain_Password
+  .containerMain_Email, .containerMain_Password, .containerMain_Name
   {
     width: $button-width-1024;
   }

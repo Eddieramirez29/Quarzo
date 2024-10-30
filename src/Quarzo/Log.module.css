@@ -27,7 +27,7 @@ input {
   border-color: transparent;
 }
 
-.containerMain_Email, .containerMain_Password {
+.containerMain_Email, .containerMain_Password, .containerMain_Name {
   width: 150px;
 }
 
@@ -77,8 +77,8 @@ form {
 }
 
 .containerMain_register > *, form > * {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   margin-left: 3px;
   margin-right: 3px;
   text-align: center;
@@ -155,7 +155,7 @@ a {
     border-width: 3px;
     border-radius: 8px;
   }
-  .containerMain_Email, .containerMain_Password {
+  .containerMain_Email, .containerMain_Password, .containerMain_Name {
     width: 200px;
   }
   .containerMain {
@@ -177,7 +177,7 @@ a {
     border-width: 4px;
     border-radius: 10px;
   }
-  .containerMain_Email, .containerMain_Password {
+  .containerMain_Email, .containerMain_Password, .containerMain_Name {
     width: 300px;
   }
   .containerMain {
